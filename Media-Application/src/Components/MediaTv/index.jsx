@@ -38,6 +38,9 @@ export const MediaTv = () => {
         {tvData.map((show) => (
           <TvCard key={show.id} show={show} />
         ))}
+          {tvData.map((show) => (
+          <TvCard key={show.id} show={show} />
+        ))}
       </section>
     </>
   );
