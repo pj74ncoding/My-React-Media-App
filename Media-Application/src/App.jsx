@@ -9,14 +9,18 @@ import { MediaTv } from "./Components/MediaTv";
 function App() {
   return (
     <>
-          <p>fffffbfgfgfgfgfggffgghgghghghgcvvccvcvcxvccv</p>
-      <p>fffffbfgfgfgfgfggffgghgghghghgcvvccvcvcxvccv</p>
-      <p>fffffbfgfgfgfgfggffgghgghghghgcvvccvcvcxvccvfffffffffffffffffffffffffffffffffffffff</p>
-      <MediaNav />
-      <MediaMovies />
-      <MediaTv />
-      <MediaFooter />
-
+      <div className="nav-and-main-container">
+        <MediaNav />
+        <div className="main-container">
+          <h1>Movies</h1>
+          <MediaMovies />
+          <h1>TV series</h1>
+          <MediaTv category="popular" heading="Popular" />
+          <MediaTv category="top_rated" heading="Top Rated" />
+          <MediaTv category="on_the_air" heading="On The Air" />
+          <MediaFooter />
+        </div>
+      </div>
     </>
   );
 }

@@ -10,7 +10,7 @@ export const TvCard = ({ show }) => {
           alt={""}
         />
         <div className="show-info-container">
-          <h5>{show.name}</h5>
+          <h2>{show.name}</h2>
           <div className="show-rating-and-date">
             <p>{show.vote_average}</p>
             <p>{show.first_air_date}</p>
