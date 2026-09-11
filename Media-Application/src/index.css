@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "ComicNeue";
+  src: url("assets/Fonts/ComicNeue-Regular\ -\ Copy.woff2") format("woff2");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "ComicNeue", sans-serif;
+}

@@ -1,0 +1,70 @@
+.media-tv-section {
+  width: 100%;
+  height: auto;
+  border: 3px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.tv-card-container {
+  height: 300px;
+  width: 200px;
+  border-radius: 8px;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+
+.tv-card-container:hover {
+  box-shadow: 0px 5px 5px grey;
+  transition: all 1s ease-in-out;
+  transform: scale(1.05);
+}
+
+.show-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+}
+.show-info-container {
+  height: auto;
+  position: absolute;
+  border-radius: 8px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: end;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0));
+  color: white;
+  padding: 10px 3px;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  gap: 10px;
+}
+
+.show-info-container:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
+.show-overview {
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  height: auto;
+
+  font-size: 11px;
+}
+
+.show-rating-and-date {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: yellow
+}
