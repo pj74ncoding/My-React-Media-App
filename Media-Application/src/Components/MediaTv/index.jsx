@@ -20,7 +20,7 @@ export const MediaTv = () => {
       setTvData(tvResults.results);
       console.log(tvResults);
     } catch (error) {
-      console.error("fetchTvData error is: ");
+      console.error("fetchTvData error is:", error);
     }
   };
   useEffect(() => {
@@ -36,10 +36,10 @@ export const MediaTv = () => {
       <p>MediaTv</p>
       <section className="media-tv-section">
         {tvData.map((show) => (
-          <TvCard key={show.id} show={show} />
+          <TvCard key={show.id} show={show} catergory="top_rated" />
         ))}
-          {tvData.map((show) => (
-          <TvCard key={show.id} show={show} />
+        {tvData.map((show) => (
+          <TvCard key={show.id} show={show} catergory="popular" />
         ))}
       </section>
     </>
