@@ -5,6 +5,7 @@ import { MediaNav } from "./Components/Nav";
 import { MediaFooter } from "./Components/Footer";
 import { MediaMovies } from "./Components/MediaMovies";
 import { MediaTv } from "./Components/MediaTv";
+import { MediaHeader } from "./Components/Header";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <div className="nav-and-main-container">
         <MediaNav />
         <div className="main-container">
+          <MediaHeader />
           <h1>Movies</h1>
           <MediaMovies category="popular" heading="Popular" />
           <MediaMovies category="top_rated" heading="Top Rated" />
