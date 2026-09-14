@@ -7,10 +7,10 @@ export const MediaTv = ({ category, heading }) => {
 
   const fetchTvData = async () => {
     try {
-      const fetchResponse = await fetch(
+      const tvResponse = await fetch(
         `https://api.themoviedb.org/3/tv/${category}?api_key=5a1dbe02eaed7aed89976013dcbc8aef`,
       );
-      const tvResults = await fetchResponse.json();
+      const tvResults = await tvResponse.json();
       setTvData(tvResults.results);
       console.log(tvResults);
     } catch (error) {

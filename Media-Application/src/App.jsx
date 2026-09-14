@@ -13,7 +13,9 @@ function App() {
         <MediaNav />
         <div className="main-container">
           <h1>Movies</h1>
-          <MediaMovies />
+          <MediaMovies category="popular" heading="Popular" />
+          <MediaMovies category="top_rated" heading="Top Rated" />
+          <MediaMovies category="upcoming" heading="Upcoming" />
           <h1>TV series</h1>
           <MediaTv category="popular" heading="Popular" />
           <MediaTv category="top_rated" heading="Top Rated" />

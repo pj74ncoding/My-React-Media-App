@@ -1,23 +1,23 @@
-export const TvCard = ({ show }) => {
+export const MovieCard = ({ movie }) => {
   return (
     <>
-      {" "}
-      <a href={`https://www.themoviedb.org/tv/${show.id}`} target="_blank">
+
+      <a href={`https://www.themoviedb.org/movie/${movie.id}`} target="_blank">
         <div className="tv-card-container">
           <img
             className="show-image"
-            src={`https://image.tmdb.org/t/p/w500${show.poster_path}`}
+            src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
             alt={""}
           />
           <div className="show-info-container">
-            <h2>{show.name}</h2>
+            <h2>{movie.original_title}</h2>
             <div className="show-rating-and-date">
-              <p>{show.vote_average}</p>
-              <p>{show.first_air_date}</p>
+              <p>{movie.vote_average}</p>
+              <p>{movie.release_date}</p>
             </div>
 
             <div className="show-overview">
-              <p>{show.overview}</p>
+              <p>{movie.overview}</p>
             </div>
           </div>
         </div>

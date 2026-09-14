@@ -1,7 +1,7 @@
 body {
   background-color: black;
 }
-/* app component*/
+/* App component*/
 .nav-and-main-container {
   display: grid;
   grid-template-columns: 6% 94%;
@@ -70,6 +70,7 @@ body {
 .media-tv-section > h2 {
   color: white;
   margin-bottom: 10px;
+ text-decoration: underline;
 }
 
 .media-tv-card-container {

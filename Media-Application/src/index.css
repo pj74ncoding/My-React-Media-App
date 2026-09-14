@@ -10,3 +10,6 @@
   font-family: "ComicNeue", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
