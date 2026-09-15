@@ -64,7 +64,7 @@ body {
 
 .icon-container > span {
   color: white;
-  font-size: 40px;
+  font-size: 38px;
 }
 
 .film-icon-container {
@@ -86,7 +86,7 @@ body {
   border-bottom: 2px solid white;
 }
 
-/* Media Hero section */
+/* Media Movie and Media Tv Hero section */
 
 .carousel-container {
   height: 75vh;
@@ -137,12 +137,12 @@ body {
   align-items: center;
 }
 
-.movie-marker {
+.marker {
   height: 25px;
   width: 25px;
   border-radius: 50%;
 }
-.movie-marker:hover {
+.marker:hover {
   cursor: pointer;
 }
 

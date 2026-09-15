@@ -10,8 +10,9 @@ export const MediaHero = () => {
   const fetchMovieData = async () => {
     try {
       const movieResponse = await fetch(
-        `https://api.themoviedb.org/3/movie/popular?api_key=5a1dbe02eaed7aed89976013dcbc8aef`,
+        "https://api.themoviedb.org/3/movie/popular?api_key=5a1dbe02eaed7aed89976013dcbc8aef",
       );
+
       const movieResults = await movieResponse.json();
       setHeroMovieData(movieResults.results);
     } catch (error) {
@@ -49,27 +50,12 @@ export const MediaHero = () => {
     }
   };
 
-  const slidePrev = () => {
-    if (index == 0) {
-      setIndex(5);
-    } else {
-      setIndex((current) => current - 1);
-    }
-  };
-
   useEffect(() => {
     slideShow = setInterval(() => {
       slideNext();
     }, 5000);
     return () => clearInterval(slideShow);
   }, [index]);
-
-  const buttons = document.querySelectorAll(".movie-marker");
-  console.log("buttons", buttons);
-
-  // for (let i = 0; i < buttons.length; i++) {
-  //   buttons[index - 1].classList.add("grey");
-  // }
 
   // =================================================
   // const movies = heroMovieData.slice(0, 5);
