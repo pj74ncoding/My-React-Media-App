@@ -26,9 +26,9 @@ export const MediaMovies = ({ heading, category }) => {
 
   return (
     <>
-      <section className="media-tv-section">
+      <section className="media-movie-section">
         <h2>{heading}</h2>
-        <div className="media-tv-card-container">
+        <div className="media-movie-card-container">
           {movieData.map((movie) => (
             <MovieCard key={movie.id} movie={movie} />
           ))}

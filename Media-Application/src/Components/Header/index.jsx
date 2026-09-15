@@ -13,8 +13,8 @@ export const MediaHeader = () => {
         /> */}
           <img
           src={foxImage}
-          height="120px"
-          width="120px"
+          height="80px"
+          width="80px"
           alt=""
         />
         <h1>Foxy74Media</h1>

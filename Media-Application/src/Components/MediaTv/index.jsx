@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { TvCard } from "./tvCard";
 
-import "./mediaTv.css";
 export const MediaTv = ({ category, heading }) => {
   const [tvData, setTvData] = useState([]);
 
